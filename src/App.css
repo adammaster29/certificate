@@ -1,0 +1,59 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+
+img{max-width: 100%;
+    height: 200px;
+    border-radius: 5px;
+border: 1px solid;
+margin-top: 1rem;
+margin-right: 2rem;
+}
+
+span{color: aqua;}
+.title{
+    text-align: center;
+font-size: 15px;}
+    
+
+.container--certificate{
+    width:90%;
+    height: 420px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+list-style: none;
+margin-top: 1rem;
+margin-left: auto;
+margin-right: auto;
+box-shadow: 2px 3px 2px 3px gray;
+transition: all 1s ease-in;
+}
+.container--certificate:hover{
+transform: translateY(-0.5em);
+box-shadow: 2px 3px 2px 3px rgb(67, 47, 80);
+}
+.btn{margin-bottom: 1rem;}
+
+@media screen and (min-width: 480px) {
+.App{display: flex;
+    flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+    .container--certificate{
+        width:200px;
+        height: 300px;
+        
+    }
+    .title{
+    font-size: 20px;}
+        
+    .container--certificate{margin-top: 4rem;}
+}
