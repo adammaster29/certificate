@@ -24,9 +24,10 @@ const Home = ({certificates}) => {
            <li>
          
              {certificate.year}
-           </li><br />
+           </li>
+
            <li>
-            <a href={certificate.pdf} target="_blank" >< Button className="btn" >Downloads</Button></a>
+            <a href={certificate.pdf} target="_blank" >< Button className="btn btn-center" >Downloads</Button></a>
            </li><br />
          </ul>
        ))}
