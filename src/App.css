@@ -13,12 +13,20 @@ border: 1px solid;
 margin-top: 1rem;
 margin-right: 2rem;
 }
-
+.img-adam{
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+}
+.container--hello{}
 span{color: aqua;}
 .title{
     text-align: center;
 font-size: 15px;}
     
+.link{
+text-decoration: none;
+}
 
 .container--certificate{
     width:90%;
@@ -32,13 +40,16 @@ margin-top: 1rem;
 margin-left: auto;
 margin-right: auto;
 box-shadow: 2px 3px 2px 3px gray;
-transition: all 1s ease-in;
+transition: all 0.5s ease-in;
 }
-.container--certificate:hover{
+ .container--certificate:hover{
 transform: translateY(-0.5em);
 box-shadow: 2px 3px 2px 3px rgb(67, 47, 80);
+color: rgb(67, 47, 80);
+background-color: rgba(207, 203, 205, 0.068);
 }
-.btn{margin-bottom: 1rem;}
+.btn{margin-bottom: 0.2rem;}
+
 
 @media screen and (min-width: 480px) {
 .App{display: flex;
@@ -56,4 +67,9 @@ flex-wrap: wrap;
     font-size: 20px;}
         
     .container--certificate{margin-top: 4rem;}
+    .container--hello{width: 100%;}
+    .img-adam{
+        width: 80%;
+        height: 350px;
+    }
 }

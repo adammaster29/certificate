@@ -1,35 +1,20 @@
 
-import { Button } from "react-bootstrap";
+import { useState } from "react";
+import {  HashRouter,  Routes,  Route} from 'react-router-dom'
 import "./App.css";
+import Home from "./componets/Home";
 import list from "./list.json";
 
 function App() {
-  console.log(list);
+const[certificates,setCertificates] = useState(list)
+  console.log(certificates);
   return (
-    <div className="App">
-       <h2 className="title"> <span >  Hello!,</span> welcome to my certificate</h2>
-    
-       
-       {list.map((certificate) => (
-         <ul className="container--certificate" key={certificate.name}>
-          
-           <img src={certificate.image.url} alt="" />
-           <br />
-           <li>
-            
-             {certificate.name}
-           </li>
-           <li>
-         
-             {certificate.year}
-           </li><br />
-           <li>
-            <a href={certificate.pdf} target="_blank" >< Button className="btn" >Downloads</Button></a>
-           </li>
-         </ul>
-       ))}
-     
-    </div>
+      <HashRouter>
+        <Routes>
+        <Route path="/"  element={<Home certificates={certificates} />  } />
+
+        </Routes>
+     </HashRouter>
   );
 }
 
