@@ -9,27 +9,20 @@ const Home = ({certificates}) => {
         <br/><br /><p>Name: <span>Adalberto agudelo</span></p>
         <p>Age:<span> &nbsp;   29 year old</span></p>
         </div>
-       
+
        {certificates.map(certificate => (
          
-         <ul className="container--certificate"  key={certificate.id} >
+         <a href={certificate.pdf} target="_blank" className="container--certificate"  key={certificate.id} >
            
-           <img src={certificate.image.url} alt="" />
+           <img className='img-certificate' src={certificate.image.url} alt="" />
            
            <br />
            <li>
             
              {certificate.name}
            </li>
-           <li>
-         
-             {certificate.year}
-           </li>
-
-           <li>
-            <a href={certificate.pdf} target="_blank" >< Button className="btn btn-center" >Downloads</Button></a>
-           </li><br />
-         </ul>
+           
+         </a>
        ))}
      
      
