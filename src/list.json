@@ -59,14 +59,14 @@
     "id": "8",
     "name": "Back End con node.js",
     "year": "2023",
-    "image": { "url": "/public/image/node new.png" },
+    "image": { "url":"/image/node_new.png" },
     "pdf": "https://certificates.academlo.com/en/verify/50890375833887"
   },
   {
     "id": "9",
     "name": "full stack web",
     "year": "2023",
-    "image": { "url":"/public/image/full stack .jpg" },
+    "image": { "url":"/image/full_stack.jpg"},
     "pdf": "https://certificates.academlo.com/en/verify/52995092357995"
   }
 ]
