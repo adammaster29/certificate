@@ -1,32 +1,34 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
-const Home = ({certificates}) => {
-    return (
-        <div className="App">
-        <div className='container--hello'>
-           <h2 className="title"> <span >  Hello!,</span> welcome to my certificate</h2>
-           <img className='img-adam' src='image/ADAm.jpg' alt="adam" />
-        <br/><br /><p>Name: <span>Adalberto agudelo</span></p>
-        <p>Age:<span> &nbsp;   29 year old</span></p>
-        </div>
+import certificado from "../list.json"
+import { useState } from 'react';
+import { useEffect } from 'react';
 
-       {certificates.map(certificate => (
-         
-         <a href={certificate.pdf} target="_blank" className="container--certificate"  key={certificate.id} >
-           
-           <img className='img-certificate' src={certificate.image.url} alt="" />
-           
-           <br />
-           <li>
-            
-             {certificate.name}
-           </li>
-           
-         </a>
-       ))}
-     
-     
-    </div>
+const Home = () => {
+    const [diplomas, setDiplomas] = useState()
+    useEffect(() => {
+        setDiplomas(certificado)
+    }, [])
+
+    console.log(diplomas)
+    return (
+        <div className='contenedor__padre'>
+
+            <div className="hijo__titulo"><h2>Diplomas y Certificados</h2> </div>
+            <div className="hijo__contenedor">
+                <div className="card__foto-grado"></div>
+                <div className="card__diploma">
+                    {diplomas?.map(diploma => (
+                        <ul className="diploma">
+                            <p>{diploma.name}</p>
+                            <img className='img__diploma' src={diploma.image.url} alt="" />
+
+                        </ul>
+
+
+                    ))}
+                </div>
+            </div>
+        </div>
     );
 };
 

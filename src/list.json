@@ -1,49 +1,49 @@
 [
   {
     "id": "1",
-    "name": "UDC,10 semestre ingenieria de software",
-    "year": "2022",
-    "image": { "url": "certificado/certificado udc.png" },
+    "name": "Ingenieria De Software",
+    "year": "2023",
+    "image": { "url": "certificado/software.jpeg" },
     "pdf": "https://drive.google.com/file/d/1jh0_Iuiip2zMSrEemC90vCFZBwg1hhup/view?usp=share_link"
   },
   {
     "id": "2",
-    "name": "Front end development with react",
+    "name": "Front End  Con React",
     "year": "2022",
     "image": { "url": "certificado/certificado react academlo.jpg" },
     "pdf": "https://certificates.academlo.com/en/verify/30381415812939"
   },
   {
     "id": "3",
-    "name": "Aplicacion web de una sola pagina",
+    "name": "Desarrollo de app web",
     "year": "2021",
     "image": {
-      "url": "certificado/aplicaciones web de una sola pagina_page-0001.jpg"
+      "url": "certificado/aplicaciones web de una sola.jpg"
     },
     "pdf": "https://drive.google.com/file/d/1reGDrguwWRTTDxAJEh_9sy-9eDwVCHRe/view?usp=share_link"
   },
   {
     "id": "4",
-    "name": "aplicacion web con intercambio de datos",
+    "name": "web intercambio de datos",
     "year": "2021",
     "image": {
-      "url": "certificado/DESARROLLO DE APLICACIONES WEB CON ARQUITECTURA DE INTERCAMBIO DE DATOS_pages-to-jpg-0001.jpg"
+      "url": "certificado/Desarrollo-arquitectura.jpg"
     },
     "pdf": "https://drive.google.com/file/d/1I3sLtuOLzAhQYnqprb7ZXomGLoP2M23V/view?usp=share_link"
   },
 
   {
     "id": "5",
-    "name": "fundation in html,css,javascript",
+    "name": "Fundamentos",
     "year": "2022",
     "image": { "url": "certificado/certificado fundamentos.jpg" },
     "pdf": "https://certificates.academlo.com/en/verify/09973678506885"
   },
   {
     "id": "6",
-    "name": "Construccion de bases de datos con Mysql",
+    "name": "Bases de datos  Mysql",
     "year": "2021",
-    "image": { "url": "certificado/mysql_page-0001.jpg" },
+    "image": { "url": "certificado/mysql.jpg" },
     "pdf": "https://drive.google.com/file/d/13QWwmnC0ZaXt0_FGB3MLZCYiE2W0vSi6/view?usp=share_link"
   },
   {
@@ -51,7 +51,7 @@
     "name": "Scrum",
     "year": "2021",
     "image": {
-      "url": "certificado/scrum para desarrollo de software_page-0001.jpg"
+      "url": "certificado/scrum.jpg"
     },
     "pdf": "https://drive.google.com/file/d/11Hvk_yrxqr5hO8KDVMXD7137gqQRlzey/view?usp=share_link"
   },
