@@ -1,35 +1,59 @@
-import React from 'react';
-import certificado from "../list.json"
-import { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Importa Link
+import certificado from "../list.json";
+
+const ITEMS_PER_PAGE = 5;
 
 const Home = () => {
-    const [diplomas, setDiplomas] = useState()
-    useEffect(() => {
-        setDiplomas(certificado)
-    }, [])
+  const [diplomas, setDiplomas] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
 
-    console.log(diplomas)
-    return (
-        <div className='contenedor__padre'>
+  useEffect(() => {
+    setDiplomas(certificado);
+  }, []);
 
-            <div className="hijo__titulo"><h2>Diplomas y Certificados</h2> </div>
-            <div className="hijo__contenedor">
-                <div className="card__foto-grado"></div>
-                <div className="card__diploma">
-                    {diplomas?.map(diploma => (
-                        <ul className="diploma">
-                            <p>{diploma.name}</p>
-                            <img className='img__diploma' src={diploma.image.url} alt="" />
+  const totalPages = Math.ceil(diplomas.length / ITEMS_PER_PAGE);
+  const indexOfLastDiploma = currentPage * ITEMS_PER_PAGE;
+  const indexOfFirstDiploma = indexOfLastDiploma - ITEMS_PER_PAGE;
+  const currentDiplomas = diplomas.slice(indexOfFirstDiploma, indexOfLastDiploma);
 
-                        </ul>
-
-
-                    ))}
+  return (
+    <div className='contenedor__padre'>
+      <div className="hijo__titulo">
+        <p>Diplomas y Certificados</p>
+      </div>
+      <div className="hijo__contenedor">
+        <div className="card__foto-grado"><img src="/image/adam.png" alt="" className="img__foto-grado" /></div>
+        <div className="contenedor__card-btn"> 
+          <div className="card__diploma">
+            {currentDiplomas.map((diploma, index) => (
+              <Link to={`/detalles/${indexOfFirstDiploma + index}`} key={index} className="diploma-link">
+                <div className="diploma">
+                  <p className='name__diploma'>{diploma.name}</p>
+                  <img className='img__diploma' src={diploma.image.url} alt="" />
                 </div>
-            </div>
+              </Link>
+            ))}
+          </div>
+<br />
+          <div className="pagination">
+            <button
+              onClick={() => setCurrentPage(currentPage - 1)}
+              disabled={currentPage === 1}
+            >
+               anterior
+            </button>
+            <button
+              onClick={() => setCurrentPage(currentPage + 1)}
+              disabled={currentPage === totalPages}
+            >
+               siguiente
+            </button>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Home;

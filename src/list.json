@@ -4,7 +4,7 @@
     "name": "Ingenieria De Software",
     "year": "2023",
     "image": { "url": "certificado/software.jpeg" },
-    "pdf": "https://drive.google.com/file/d/1jh0_Iuiip2zMSrEemC90vCFZBwg1hhup/view?usp=share_link"
+    "pdf": "/pdf/diploma ing_software.pdf"
   },
   {
     "id": "2",
@@ -24,7 +24,7 @@
   },
   {
     "id": "4",
-    "name": "web intercambio de datos",
+    "name": "intercambio de datos",
     "year": "2021",
     "image": {
       "url": "certificado/Desarrollo-arquitectura.jpg"

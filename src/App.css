@@ -10,15 +10,18 @@
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
+  padding: 10px;
 }
 /* ********************titulo************* */
 .hijo__titulo {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 100px;
+  height: auto;
   color: #ffffff;
   text-shadow: 2px 3px 2px rgb(12, 146, 12);
+  font-weight:900;
+  font-size: 35px;
 }
 
 /* ************************tarjetas de diplomas********************* */
@@ -26,12 +29,15 @@
   display: flex;
   flex-direction: row;
 }
+/* contenedor de las tarjetas */
 .card__diploma{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 80%;
+    width: 100%;
+    gap: 1rem;
 }
+/* tarjetas */
 .diploma {
     display: flex;
     justify-content: center;
@@ -43,8 +49,14 @@
  text-align: center;
  padding: 0;
 }
-
-
+.diploma:hover{
+    opacity: 90%;
+}
+.name__diploma{
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 2px 3px 2px gray;
+}
 .img__diploma{
     width: 100%;
     height: 100%;
@@ -54,14 +66,63 @@
 
 
 .card__foto-grado {
-  background-image: url(/image/adam-grado.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 350px;
-  height: 400px;
-  border-radius: 1% 50% 0 50%;
+ 
+  width: 550px;
+  overflow: hidden;
+  border-radius: 2%;
   transition: all 2s;
+}
+.img__foto-grado{
+  width: 100%;
+  height: 100%;
 }
 .card__foto-grado:hover{
 transform: scale(1.2);
+}
+/* ***********paginacion */
+.contenedor__card-btn{
+    display: flex;
+    flex-direction: column;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+button{
+    width: 150px;
+    height: 30px;
+    border: none;
+  
+   
+}
+/* ********************************Detalles************************** */
+.detalles-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name__diploma-detalles{
+  color: #000000;
+  font-weight: 800;
+  text-shadow: 2px 3px 2px gray;
+}
+.img__diploma-detalle{
+  width: 700px;
+  height: 400px;
+  border: 1px solid #bbb9b9;
+}
+.btn__detalles{
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px rgb(30, 230, 170);
+}
+.btn__detalles:hover{
+  font-size: 25px;
+  color: green;
+  text-shadow: 2px 2px 2px rgb(115, 119, 119);
 }
