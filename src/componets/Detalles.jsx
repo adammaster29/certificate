@@ -8,8 +8,8 @@ const Detalles = () => {
 
   return (
     <div className="detalles-container">
-      <h2>Detalles del Diploma</h2>
-      <div className="detalle-diploma">
+      <h2 className='titulo__detalles'>Detalles del Diploma</h2>
+      <div className="detalle__diploma">
         <p className="name__diploma-detalles">{selectedDiploma.name}</p>
         <img className="img__diploma-detalle" src={selectedDiploma.image.url} alt="" />
        
