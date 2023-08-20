@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Importa Link
 import certificado from "../list.json";
 
-const ITEMS_PER_PAGE = 5;
+const ITEMS_PER_PAGE = 8;
 
 const Home = () => {
   const [diplomas, setDiplomas] = useState([]);
@@ -19,11 +19,10 @@ const Home = () => {
 
   return (
     <div className='contenedor__padre'>
-      <div className="hijo__titulo">
-        <p>Diplomas y Certificados</p>
+      <div className="hijo__contenedor-titulo">
+        <p className="hijo__titulo">Diplomas y Certificados</p>
       </div>
       <div className="hijo__contenedor">
-        <div className="card__foto-grado"><img src="/image/adam.png" alt="" className="img__foto-grado" /></div>
         <div className="contenedor__card-btn"> 
           <div className="card__diploma">
             {currentDiplomas.map((diploma, index) => (

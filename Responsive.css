@@ -1,0 +1,22 @@
+/* responsive 480 max-width */
+
+@media screen and (max-width: 480px) {
+    .hijo__titulo{
+        font-size: 25px;
+    }
+    .card__diploma{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: auto;
+    }
+    .diploma {
+      width: 100%;
+      height: 300px;
+      margin-top: 2rem;
+    }
+    .img__diploma-detalle{
+      
+        height: 300px;
+        border: 1px solid #bbb9b9;
+      }
+}
