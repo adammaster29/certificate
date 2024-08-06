@@ -1,6 +1,10 @@
 /* responsive 480 max-width */
 
 @media screen and (max-width: 480px) {
+  
+.contenedor__padre {
+ padding: 20px;
+}
     .hijo__titulo{
         font-size: 25px;
     }

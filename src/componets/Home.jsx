@@ -27,7 +27,7 @@ const Home = () => {
           <div className="card__diploma">
             {currentDiplomas.map((diploma, index) => (
               <Link to={`/detalles/${indexOfFirstDiploma + index}`} key={index} className="diploma-link">
-                <div className="diploma">
+                <div className="diploma notranslate"  >
                   <p className='name__diploma'>{diploma.name}</p>
                   <img className='img__diploma' src={diploma.image.url} alt="" />
                 </div>
