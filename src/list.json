@@ -8,13 +8,20 @@
   },
   {
     "id": "2",
+    "name": "Manejo Ambiental",
+    "year": "2021",
+    "image": { "url": "certificado/manejoAmbiental.jpg" },
+    "pdf": "/pdf/manejoAmbiental.pdf"
+  },
+  {
+    "id": "3",
     "name": "Front End  Con React",
     "year": "2022",
     "image": { "url": "certificado/certificado react academlo.jpg" },
     "pdf": "https://certificates.academlo.com/en/verify/30381415812939"
   },
   {
-    "id": "3",
+    "id": "4",
     "name": "Desarrollo de app web",
     "year": "2021",
     "image": {
@@ -23,7 +30,7 @@
     "pdf": "https://drive.google.com/file/d/1reGDrguwWRTTDxAJEh_9sy-9eDwVCHRe/view?usp=share_link"
   },
   {
-    "id": "4",
+    "id": "5",
     "name": "intercambio de datos",
     "year": "2021",
     "image": {
@@ -33,21 +40,21 @@
   },
 
   {
-    "id": "5",
+    "id": "6",
     "name": "Fundamentos",
     "year": "2022",
     "image": { "url": "certificado/certificado fundamentos.jpg" },
     "pdf": "https://certificates.academlo.com/en/verify/09973678506885"
   },
   {
-    "id": "6",
+    "id": "7",
     "name": "Bases de datos  Mysql",
     "year": "2021",
     "image": { "url": "certificado/mysql.jpg" },
     "pdf": "https://drive.google.com/file/d/13QWwmnC0ZaXt0_FGB3MLZCYiE2W0vSi6/view?usp=share_link"
   },
   {
-    "id": "7",
+    "id": "8",
     "name": "Scrum",
     "year": "2021",
     "image": {
@@ -56,17 +63,45 @@
     "pdf": "https://drive.google.com/file/d/11Hvk_yrxqr5hO8KDVMXD7137gqQRlzey/view?usp=share_link"
   },
   {
-    "id": "8",
+    "id": "9",
     "name": "Back End con node.js",
     "year": "2023",
     "image": { "url":"/image/node_new.png" },
     "pdf": "https://certificates.academlo.com/en/verify/50890375833887"
   },
   {
-    "id": "9",
+    "id": "10",
     "name": "full stack web",
     "year": "2023",
     "image": { "url":"/image/full_stack.jpg"},
     "pdf": "https://certificates.academlo.com/en/verify/52995092357995"
+  },
+  {
+    "id": "11", 
+    "name": "Inducción a los SGA",
+    "year": "2019",
+    "image": { "url":"certificado/induccionAlosSGA.jpg"},
+    "pdf": "pdf/InduccionAlosSGA.pdf"
+  },
+  {
+    "id": "12", 
+    "name": "SGA-Norma-Iso-14001",
+    "year": "2019",
+    "image": { "url":"certificado/gestionAmbientalNtcIso14001.jpg"},
+    "pdf": "pdf/SGA-Norma-Iso-14001.pdf"
+  },
+  {
+    "id": "13", 
+    "name": "Comunicacion",
+    "year": "2022",
+    "image": { "url":"certificado/comunicacionEnTrabajo.jpg"},
+    "pdf": "pdf/Comunicacion.pdf"
+  },
+  {
+    "id": "14", 
+    "name": "Liderazgo",
+    "year": "2020",
+    "image": { "url":"certificado/liderazgo.jpg"},
+    "pdf": "pdf/Liderazgo.pdf"
   }
 ]

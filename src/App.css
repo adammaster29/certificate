@@ -5,7 +5,8 @@
 }
 
 .contenedor__padre {
-  background-image: url(/image/yellow.jpg);
+  background-image: url('image/lagarto.avif');
+  /* background : radial-gradient(rgb(8, 6, 4),rgb(80, 121, 4),blue); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -121,8 +122,8 @@ button{
   text-shadow: 2px 3px 2px gray;
 }
 .img__diploma-detalle{
-  width: 85%;
-  height: 400px;
+  width: 75%;
+  height: 450px;
   border: 1px solid #bbb9b9;
 }
 .btn__detalles{
