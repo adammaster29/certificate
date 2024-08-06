@@ -5,7 +5,7 @@
 }
 
 .contenedor__padre {
-  background-image: url('image/lagarto.avif');
+  background-image: url('image/lagarto.jpg');
   /* background : radial-gradient(rgb(8, 6, 4),rgb(80, 121, 4),blue); */
   background-size: cover;
   background-repeat: no-repeat;
